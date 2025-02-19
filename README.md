@@ -118,6 +118,16 @@
       background: #5aae9f;
     }
 
+    /* Sección de Ubicación */
+    .ubicacion {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .ubicacion p {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+    }
+
     /* Sección de Testimonios y Placa de Calidad */
     .testimonials {
       background: #F7F7F7;
@@ -181,6 +191,8 @@
       margin-top: 10px;
     }
     .social-links a {
+      position: relative;
+      z-index: 1100; /* Asegura que estén sobre otros elementos */
       margin: 0 10px;
       text-decoration: none;
       font-weight: bold;
@@ -216,11 +228,13 @@
         display: block;
         margin: 0 auto;
       }
+      /* Reducir el padding en testimonios para que las estrellas no se superpongan */
       .testimonial {
-        padding-left: 80px;
+        padding-left: 60px;
       }
       .stars {
-        width: 70px;
+        width: 60px;
+        font-size: 1rem;
       }
     }
   </style>
@@ -235,6 +249,7 @@
   <nav>
     <a href="#inicio">Inicio</a>
     <a href="#contacto">Contacto</a>
+    <a href="#ubicacion">Ubicación</a>
     <a href="#testimonios">Testimonios</a>
   </nav>
 
@@ -254,7 +269,7 @@
       </p>
     </section>
 
-    <!-- Sección de contacto -->
+    <!-- Sección de Contacto -->
     <section id="contacto">
       <h2>Contacto</h2>
       <p><strong>Correo:</strong>
@@ -267,6 +282,13 @@
       <!-- Botones para enviar correo o llamar -->
       <a href="mailto:herboristeriacentrovenecia@yahoo.com" class="btn">Enviar Correo</a>
       <a href="tel:965154120" class="btn">Llamar</a>
+    </section>
+
+    <!-- Sección de Ubicación -->
+    <section id="ubicacion" class="ubicacion">
+      <h2>Ubicación</h2>
+      <p><strong>Dirección:</strong> Avd. Costablanca, 21 Lc.28 C.C. Venecia, 03540 Alicante</p>
+      <a href="https://www.google.com/maps?q=Avd.+Costablanca,+21+Lc.28+C.C.+Venecia,+03540+Alicante" target="_blank" class="btn">Ver Ubicación</a>
     </section>
 
     <!-- Sección de Testimonios y Placa de Calidad -->
@@ -311,3 +333,4 @@
   </div>
 </body>
 </html>
+
